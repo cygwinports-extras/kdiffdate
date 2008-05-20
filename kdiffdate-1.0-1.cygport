@@ -1,0 +1,11 @@
+inherit qt3
+
+DESCRIPTION="KDE date differential calculator"
+HOMEPAGE="http://www.geocities.com/nadineklein17/kdiffdate/"
+SRC_URI="mirror://kde/stable/apps/KDE3.x/utils/${P}.tar.gz"
+SRC_DIR=.
+
+src_install() {
+	cd ${B}
+	dobin ${PN}.exe
+}
